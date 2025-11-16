@@ -1,5 +1,6 @@
-import { User, Mail, MapPin } from "lucide-react";
+import { User, Mail, MapPin, Download } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -61,6 +62,16 @@ const About = () => {
                   </div>
                 </div>
               </Card>
+            </div>
+
+            {/* CV Download Button */}
+            <div className="mt-8">
+              <Button size="lg" className="w-full" asChild>
+                <a href="/cv.pdf" download="CV_Votre_Nom.pdf">
+                  <Download className="w-5 h-5 mr-2" />
+                  Télécharger mon CV
+                </a>
+              </Button>
             </div>
           </div>
         </div>
