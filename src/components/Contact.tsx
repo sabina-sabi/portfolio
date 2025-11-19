@@ -7,27 +7,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "votre.email@example.com",
-      href: "mailto:votre.email@example.com",
+      value: "fariza.faradji@cy-tech.fr",
+      href: "mailto:fariza.faradji@cy-tech.fr",
     },
     {
       icon: Phone,
       label: "Téléphone",
-      value: "+33 6 12 34 56 78",
-      href: "tel:+33612345678",
+      value: "Sur demande",
+      href: "#",
     },
     {
       icon: MapPin,
       label: "Localisation",
-      value: "Paris, France",
+      value: "Cergy, Île-de-France",
       href: "#",
     },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/fariza-faradji", label: "LinkedIn" },
     { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
   ];
 
   return (
@@ -95,7 +94,7 @@ const Contact = () => {
           {/* Call to Action */}
           <div className="text-center mt-12 animate-fade-in">
             <Button size="lg" className="text-lg px-8" asChild>
-              <a href="mailto:votre.email@example.com">
+              <a href="mailto:fariza.faradji@cy-tech.fr">
                 <Mail className="w-5 h-5 mr-2" />
                 Envoyer un message
               </a>

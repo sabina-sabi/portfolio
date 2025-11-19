@@ -27,14 +27,16 @@ const About = () => {
           <div className="animate-slide-up space-y-6">
             <h3 className="text-2xl font-bold">Bienvenue sur mon portfolio</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Passionné par la technologie et l'innovation, je me consacre à créer
-              des solutions numériques qui font la différence. Mon parcours m'a
-              permis de développer des compétences solides en développement et en
-              conception.
+              Étudiante en Licence 3 Informatique à CY Cergy Paris Université, je suis actuellement 
+              à la recherche d'un stage de 2 à 4 mois dans les domaines de la Data, du Développement 
+              ou de l'IT, à partir d'avril 2026 (éventuellement suivi d'une alternance de 2 ans à partir 
+              de septembre 2026).
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Je suis constamment à la recherche de nouveaux défis et d'opportunités
-              pour apprendre et grandir professionnellement.
+              Passionnée par les bases de données, la science des données et le développement web, 
+              je me consacre à créer des solutions innovantes et efficaces. Mon parcours académique 
+              et mes projets m'ont permis de développer des compétences solides en programmation, 
+              en gestion de données et en conception de systèmes.
             </p>
 
             {/* Contact Info Cards */}
@@ -46,7 +48,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">votre.email@example.com</p>
+                    <p className="font-medium">fariza.faradji@cy-tech.fr</p>
                   </div>
                 </div>
               </Card>
@@ -58,7 +60,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localisation</p>
-                    <p className="font-medium">Votre Ville, Pays</p>
+                    <p className="font-medium">Cergy, Île-de-France</p>
                   </div>
                 </div>
               </Card>
@@ -67,7 +69,7 @@ const About = () => {
             {/* CV Download Button */}
             <div className="mt-8">
               <Button size="lg" className="w-full" asChild>
-                <a href="/cv.pdf" download="CV_Votre_Nom.pdf">
+                <a href="/CV_Fariza_FARADJI.pdf" download="CV_Fariza_FARADJI.pdf">
                   <Download className="w-5 h-5 mr-2" />
                   Télécharger mon CV
                 </a>

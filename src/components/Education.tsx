@@ -4,22 +4,22 @@ import { Card } from "@/components/ui/card";
 const Education = () => {
   const education = [
     {
-      degree: "Master en Informatique",
-      institution: "Université X",
-      period: "2021 - 2023",
-      description: "Spécialisation en développement logiciel et intelligence artificielle",
+      degree: "Licence 3 Informatique",
+      institution: "CY Cergy Paris Université",
+      period: "2025 - 2026",
+      description: "Bases de Données, Probabilités et statistiques, Réseaux, Algorithmique et Structures de données avancées, Introduction à la science des données, Introduction à l'IA, Gestion de projet, Développement Web Avancé",
     },
     {
-      degree: "Licence en Informatique",
-      institution: "Université Y",
-      period: "2018 - 2021",
-      description: "Formation générale en informatique et programmation",
+      degree: "Licence 2 Informatique",
+      institution: "CY Cergy Paris Université",
+      period: "2024 - 2025",
+      description: "Formation en informatique avec une moyenne de 15/20",
     },
     {
-      degree: "Baccalauréat Sciences",
-      institution: "Lycée Z",
-      period: "2017 - 2018",
-      description: "Mention Très Bien",
+      degree: "Licence 1 et 2 Informatique",
+      institution: "Université Mouloud Mammeri de Tizi-Ouzou",
+      period: "2022 - 2024",
+      description: "Formation générale en informatique avec une moyenne de 14/20",
     },
   ];
 

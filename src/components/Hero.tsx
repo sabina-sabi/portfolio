@@ -29,10 +29,10 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 text-center animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
           Bonjour, je suis
-          <span className="block mt-2 text-white">Votre Nom</span>
+          <span className="block mt-2 text-white">Fariza FARADJI</span>
         </h1>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-          Développeur passionné | Designer créatif | Innovateur
+          Étudiante en Licence 3 Informatique | Data | Développement | IT
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button

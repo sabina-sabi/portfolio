@@ -4,36 +4,25 @@ import { Card } from "@/components/ui/card";
 const Experience = () => {
   const experiences = [
     {
-      title: "Développeur Full Stack",
-      company: "Entreprise Tech ABC",
-      period: "2023 - Présent",
-      description: "Développement d'applications web modernes avec React et Node.js. Participation active à l'architecture et à l'optimisation des performances.",
+      title: "Professeure particulière en mathématiques et informatique",
+      company: "SuperProf",
+      period: "2024 - 2025",
+      description: "Accompagnement d'étudiants dans leur apprentissage des mathématiques et de l'informatique. Pédagogie et transmission des connaissances adaptées aux besoins individuels.",
       achievements: [
-        "Amélioration des performances de 40%",
-        "Migration vers une architecture microservices",
-        "Mentorat de 3 développeurs juniors",
+        "Accompagnement personnalisé d'étudiants",
+        "Pédagogie adaptée aux différents niveaux",
+        "Transmission efficace des connaissances",
       ],
     },
     {
-      title: "Développeur Frontend",
-      company: "Startup Innovation XYZ",
-      period: "2022 - 2023",
-      description: "Création d'interfaces utilisateur réactives et accessibles. Collaboration étroite avec l'équipe UX/UI.",
+      title: "Vente et gestion de stock",
+      company: "Librairie Frères FERADJI",
+      period: "Mai 2023 - Septembre 2023",
+      description: "Gestion quotidienne des ventes et du stock dans une librairie. Organisation et tenue de l'inventaire.",
       achievements: [
-        "Implémentation de 50+ composants réutilisables",
-        "Réduction du temps de chargement de 60%",
-        "Mise en place de tests automatisés",
-      ],
-    },
-    {
-      title: "Stagiaire Développeur",
-      company: "Agence Web Digital",
-      period: "2021 - 2022",
-      description: "Stage de fin d'études axé sur le développement web et mobile. Apprentissage des meilleures pratiques du secteur.",
-      achievements: [
-        "Développement de 5 sites web clients",
-        "Participation aux revues de code",
-        "Formation sur les méthodologies Agile",
+        "Gestion efficace du stock",
+        "Relation client professionnelle",
+        "Organisation de l'inventaire",
       ],
     },
   ];
