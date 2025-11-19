@@ -72,26 +72,12 @@ const Projects = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <Badge key={i} variant="secondary">
                       {tech}
                     </Badge>
                   ))}
-                </div>
-                <div className="flex gap-3">
-                  <Button variant="default" size="sm" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </a>
-                  </Button>
                 </div>
               </CardContent>
             </Card>

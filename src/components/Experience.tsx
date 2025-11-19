@@ -51,9 +51,6 @@ const Experience = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <Card className="p-6 ml-16 md:ml-0 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    {/* Timeline Dot */}
-                    <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-primary rounded-full border-4 border-background -translate-x-1/2" />
-                    
                     <div className="flex items-start gap-4">
                       <div className="p-3 bg-accent rounded-lg">
                         <Briefcase className="w-6 h-6 text-accent-foreground" />
