@@ -18,7 +18,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/photo_portfolio.png" 
+                  src="/portfolio/photo_portfolio.png" 
                   alt="photo Fariza FARADJI" 
                   className="w-full h-full object-cover"
                 />
@@ -70,7 +70,7 @@ const About = () => {
             {/* CV Download Button */}
             <div className="mt-8">
               <Button size="lg" className="w-full" asChild>
-                <a href="/CV_Fariza_FARADJI.pdf" download="CV_Fariza_FARADJI.pdf">
+                <a href="/portfolio/0/CV_Fariza_FARADJI.pdf" download="CV_Fariza_FARADJI.pdf">
                   <Download className="w-5 h-5 mr-2" />
                   Télécharger mon CV
                 </a>

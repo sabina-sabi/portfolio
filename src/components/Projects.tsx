@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Site web dédié aux idées de sorties et d’activités dans le Val-d’Oise. Les événements sont récupérés via des API, et les utilisateurs peuvent proposer leurs propres idées grâce à un espace personnel avec connexion sécurisée.",
       technologies: ["PHP", "MySQL", "API", "JSON", "XML", "HTML", "CSS", "JavaScript"],
-      image: "/public/banc_valdoise.webp",
+      image: "/portfolio/banc_valdoise.webp",
       githubUrl: "https://github.com/dylan-manseri/SortieValdOise",
       liveUrl: "https://sortievaldoise.alwaysdata.net",
     },
