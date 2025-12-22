@@ -13,13 +13,13 @@ const Education = () => {
       degree: "Licence 2 Informatique",
       institution: "CY Cergy Paris Université",
       period: "2024 - 2025",
-      description: "Formation en informatique avec une moyenne de 15/20",
+      description: "Moyenne de 15/20",
     },
     {
       degree: "Licence 1 et 2 Informatique",
       institution: "Université Mouloud Mammeri de Tizi-Ouzou",
       period: "2022 - 2024",
-      description: "Formation générale en informatique avec une moyenne de 14/20",
+      description: "Moyenne de 14/20",
     },
   ];
 

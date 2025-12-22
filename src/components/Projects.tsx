@@ -6,36 +6,44 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
+      title: "Sortie Val-d’Oise",
+      description:
+        "Site web dédié aux idées de sorties et d’activités dans le Val-d’Oise. Les événements sont récupérés via des API, et les utilisateurs peuvent proposer leurs propres idées grâce à un espace personnel avec connexion sécurisée.",
+      technologies: ["PHP", "MySQL", "API", "JSON", "XML", "HTML", "CSS", "JavaScript"],
+      image: "/public/banc_valdoise.webp",
+      githubUrl: "https://github.com/dylan-manseri/SortieValdOise",
+      liveUrl: "https://sortievaldoise.alwaysdata.net",
+    },
+
+    {
       title: "Système de gestion de parking connecté",
       description: "Conception d'un système distribué avec des bornes simulées (en Python) communiquant via TCP avec un serveur applicatif (Java) relié à une base PostgreSQL. Site web pour le suivi en temps réel, la gestion et l'analyse des données.",
       technologies: ["Python", "Java", "PostgreSQL", "TCP", "Web"],
       image: "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&h=500&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/fari-za/projet_parking",
     },
     {
       title: "Simulateur d'un système de gestion de bases de données",
       description: "Développement en Java d'un simulateur de SGBD interprétant des requêtes SQL et générant des plans d'exécution en arbre binaire, avec tests unitaires (JUnit).",
       technologies: ["Java", "SQL", "JUnit"],
       image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&h=500&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/fari-za/data_base",
+      
     },
     {
       title: "Site web pour la météo",
       description: "Développement d'un site web de visualisation de données météo en temps réel. Suivi des villes consultées, gestion des préférences via cookies et affichage statistique. Intégration d'APIs externes avec échanges de données aux formats XML et JSON.",
       technologies: ["HTML", "CSS", "JavaScript", "PHP", "API", "XML", "JSON"],
       image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=500&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/fari-za/site_meteo",
+      liveUrl: "https://fariza-faradji.alwaysdata.net",
     },
     {
       title: "Extraction et manipulation de métadonnées d'images",
       description: "Développement en Java d'une application pour extraire et manipuler les métadonnées EXIF/XMP d'images via des bibliothèques Java.",
       technologies: ["Java", "EXIF", "XMP"],
       image: "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?w=800&h=500&fit=crop",
-      githubUrl: "#",
-      liveUrl: "#",
+      githubUrl: "https://github.com/fari-za/metadonnees_image",
     },
   ];
 
@@ -79,6 +87,28 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
+                {project.liveUrl && (
+                  <Button variant="default" size="sm" asChild>
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Voir le site
+                    </a>
+                  </Button>
+                )}
+
+                {project.githubUrl && project.githubUrl !== "#" && (
+                  <Button variant="outline" size="sm" asChild>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      Voir sur GitHub
+                    </a>
+                  </Button>
+                )}
+                
               </CardContent>
             </Card>
           ))}

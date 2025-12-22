@@ -11,17 +11,21 @@ const About = () => {
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
 
+
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Profile Image */}
           <div className="animate-slide-up">
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary to-primary-dark overflow-hidden shadow-2xl">
-                <div className="w-full h-full flex items-center justify-center">
-                  <User className="w-48 h-48 text-primary-foreground opacity-50" />
-                </div>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/photo_portfolio.png" 
+                  alt="photo Fariza FARADJI" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
+
 
           {/* About Content */}
           <div className="animate-slide-up space-y-6">
@@ -33,10 +37,7 @@ const About = () => {
               de septembre 2026).
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Passionnée par les bases de données, la science des données et le développement web, 
-              je me consacre à créer des solutions innovantes et efficaces. Mon parcours académique 
-              et mes projets m'ont permis de développer des compétences solides en programmation, 
-              en gestion de données et en conception de systèmes.
+              
             </p>
 
             {/* Contact Info Cards */}
@@ -48,7 +49,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">fariza.faradji@cy-tech.fr</p>
+                    <p className="font-medium">farizafaradji@gmail.com</p>
                   </div>
                 </div>
               </Card>

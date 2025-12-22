@@ -7,8 +7,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "fariza.faradji@cy-tech.fr",
-      href: "mailto:fariza.faradji@cy-tech.fr",
+      value: "farizafaradji@gmail.com",
+      href: "mailto:farizafaradji@gmail.com",
     },
     {
       icon: Phone,
@@ -19,14 +19,14 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Localisation",
-      value: "Cergy, Île-de-France",
+      value: "Nanterre, Île-de-France",
       href: "#",
     },
   ];
 
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/in/fariza-faradji", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
+    { icon: Github, href: "https://github.com/fari-za", label: "GitHub" },
   ];
 
   return (
@@ -94,9 +94,9 @@ const Contact = () => {
           {/* Call to Action */}
           <div className="text-center mt-12 animate-fade-in">
             <Button size="lg" className="text-lg px-8" asChild>
-              <a href="mailto:fariza.faradji@cy-tech.fr">
+              <a href="mailto:farizafaradji@gmail.com">
                 <Mail className="w-5 h-5 mr-2" />
-                Envoyer un message
+                Envoyer un email
               </a>
             </Button>
           </div>

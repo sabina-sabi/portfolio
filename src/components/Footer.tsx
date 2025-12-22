@@ -4,10 +4,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <p className="text-muted-foreground">
-            © {new Date().getFullYear()} Votre Nom. Tous droits réservés.
+            © {new Date().getFullYear()} Fariza FARADJI. Tous droits réservés.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            Fait avec passion 💙
           </p>
         </div>
       </div>

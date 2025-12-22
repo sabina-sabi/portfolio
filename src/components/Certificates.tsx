@@ -6,38 +6,44 @@ import { Badge } from "@/components/ui/badge";
 const Certificates = () => {
   const certificates = [
     {
+      title: "Introduction à la science des données",
+      issuer: "Cisco Networking Academy",
+      date: "26 Octobre 2025",
+      description: "Formation aux concepts fondamentaux de la science des données et à l'analyse de données",
+      skills: ["Collection de données", "Validation de données", "Analyse de données"],
+      badge: true,
+      image: "public/certificates/intro_data_science.png",
+      pdfUrl: "public/certificates/Introduction_Data_Science.pdf",
+      badgeUrl: "https://www.credly.com/badges/83f35c33-fe60-4246-b131-b37713690dd6",
+    },
+
+    {
       title: "Introduction à la Cybersécurité",
       issuer: "Cisco Networking Academy",
       date: "2024",
       description: "Formation complète sur les fondamentaux de la cybersécurité et les meilleures pratiques de protection",
-      skills: ["Sécurité", "Réseaux", "Protection"],
+      skills: [
+        "Cybersécurité & bonnes pratiques",
+        "Réseaux & vulnérabilités",
+        "Protection des données",
+        "Détection des menaces",
+        "Sécurité informatique"
+      ],
+
       badge: true,
-      badgeUrl: "https://www.credly.com/badges/your-badge-id",
+      image: "public/certificates/cybersecurity.png",
+      pdfUrl: "public/certificates/cybersecurity.pdf",
+      badgeUrl: "https://www.credly.com/badges/5dfe5dd9-5766-4ccc-8abb-f13c6f2db9b0",
     },
-    {
-      title: "Introduction à la science des données",
-      issuer: "Cisco Networking Academy",
-      date: "2024",
-      description: "Formation aux concepts fondamentaux de la science des données et à l'analyse de données",
-      skills: ["Data Science", "Analyse de données", "Python"],
-      badge: true,
-      badgeUrl: "https://www.credly.com/badges/your-badge-id",
-    },
-    {
-      title: "Développement Web",
-      issuer: "Formation académique",
-      date: "2024",
-      description: "Certification en développement web moderne avec HTML, CSS, JavaScript et PHP",
-      skills: ["HTML", "CSS", "JavaScript", "PHP"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-    },
+
     {
       title: "Google Developer Student Club (GDSC)",
       issuer: "Google",
       date: "2023",
-      description: "Participation active au programme GDSC pendant 6 mois - apprentissage des technologies Google et développement de projets",
-      skills: ["Google Cloud", "Développement", "Collaboration"],
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=300&fit=crop",
+      description: "Participation active au programme GDSC pendant 6 mois. centrée sur le développement web et les technologies associées.",
+      skills: ["HTML", "CSS", "JavaScript", "PHP", "Git", "GitHub"],
+      pdfUrl: "public/certificates/certification_gdsc.pdf",
+      image: "public/certificates/gdsc_logo.png",
     },
   ];
 
@@ -80,12 +86,12 @@ const Certificates = () => {
                   </CardDescription>
                 </div>
 
-                {cert.image && !cert.badge && (
+                {cert.image && (
                   <div className="aspect-video bg-muted rounded-lg overflow-hidden">
                     <img
                       src={cert.image}
                       alt={cert.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 )}
@@ -108,6 +114,16 @@ const Certificates = () => {
                     </a>
                   </Button>
                 )}
+
+                {cert.pdfUrl && (
+                  <Button variant="outline" size="sm" className="w-full" asChild>
+                    <a href={cert.pdfUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Voir le certificat (PDF)
+                    </a>
+                  </Button>
+                )}
+
               </CardContent>
             </Card>
           ))}
@@ -115,7 +131,7 @@ const Certificates = () => {
 
         <div className="text-center mt-12 animate-fade-in">
           <p className="text-muted-foreground">
-            Pour ajouter vos certificats, téléchargez les images de vos certificats PDF
+            
           </p>
         </div>
       </div>

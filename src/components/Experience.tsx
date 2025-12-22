@@ -7,24 +7,27 @@ const Experience = () => {
       title: "Professeure particulière en mathématiques et informatique",
       company: "SuperProf",
       period: "2024 - 2025",
-      description: "Accompagnement d'étudiants dans leur apprentissage des mathématiques et de l'informatique. Pédagogie et transmission des connaissances adaptées aux besoins individuels.",
+      description: "Soutien scolaire en mathématiques et informatique.",
       achievements: [
-        "Accompagnement personnalisé d'étudiants",
-        "Pédagogie adaptée aux différents niveaux",
-        "Transmission efficace des connaissances",
+        "Accompagnement personnalisé",
+        "Adaptation des méthodes pédagogiques",
+        "Transmission claire des connaissances",
       ],
     },
+
+
     {
       title: "Vente et gestion de stock",
       company: "Librairie Frères FERADJI",
       period: "Mai 2023 - Septembre 2023",
-      description: "Gestion quotidienne des ventes et du stock dans une librairie. Organisation et tenue de l'inventaire.",
+      description: "Gestion des ventes et du stock au sein d'une librairie.",
       achievements: [
-        "Gestion efficace du stock",
-        "Relation client professionnelle",
-        "Organisation de l'inventaire",
+        "Gestion quotidienne du stock",
+        "Relation client et conseil",
+        "Organisation et suivi de l'inventaire",
       ],
     },
+
   ];
 
   return (
