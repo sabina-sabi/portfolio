@@ -12,8 +12,8 @@ const Certificates = () => {
       description: "Formation aux concepts fondamentaux de la science des données et à l'analyse de données",
       skills: ["Collection de données", "Validation de données", "Analyse de données"],
       badge: true,
-      image: "public/certificates/intro_data_science.png",
-      pdfUrl: "public/certificates/Introduction_Data_Science.pdf",
+      image: "/portfolio/certificates/intro_data_science.png",
+      pdfUrl: "/portfolio/certificates/Introduction_Data_Science.pdf",
       badgeUrl: "https://www.credly.com/badges/83f35c33-fe60-4246-b131-b37713690dd6",
     },
 
@@ -31,8 +31,8 @@ const Certificates = () => {
       ],
 
       badge: true,
-      image: "public/certificates/cybersecurity.png",
-      pdfUrl: "public/certificates/cybersecurity.pdf",
+      image: "/portfolio/certificates/cybersecurity.png",
+      pdfUrl: "/portfolio/certificates/cybersecurity.pdf",
       badgeUrl: "https://www.credly.com/badges/5dfe5dd9-5766-4ccc-8abb-f13c6f2db9b0",
     },
 
@@ -42,8 +42,8 @@ const Certificates = () => {
       date: "2023",
       description: "Participation active au programme GDSC pendant 6 mois. centrée sur le développement web et les technologies associées.",
       skills: ["HTML", "CSS", "JavaScript", "PHP", "Git", "GitHub"],
-      pdfUrl: "public/certificates/certification_gdsc.pdf",
-      image: "public/certificates/gdsc_logo.png",
+      pdfUrl: "/portfolio/certificates/certification_gdsc.pdf",
+      image: "/portfolio/certificates/gdsc_logo.png",
     },
   ];
 

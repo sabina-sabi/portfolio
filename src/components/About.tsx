@@ -70,7 +70,7 @@ const About = () => {
             {/* CV Download Button */}
             <div className="mt-8">
               <Button size="lg" className="w-full" asChild>
-                <a href="/portfolio/0/CV_Fariza_FARADJI.pdf" download="CV_Fariza_FARADJI.pdf">
+                <a href="/portfolio/CV_Fariza_FARADJI.pdf" download="CV_Fariza_FARADJI.pdf">
                   <Download className="w-5 h-5 mr-2" />
                   Télécharger mon CV
                 </a>
