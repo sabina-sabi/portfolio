@@ -10,12 +10,7 @@ const Contact = () => {
       value: "farizafaradji@gmail.com",
       href: "mailto:farizafaradji@gmail.com",
     },
-    {
-      icon: Phone,
-      label: "Téléphone",
-      value: "Sur demande",
-      href: "#",
-    },
+
     {
       icon: MapPin,
       label: "Localisation",

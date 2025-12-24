@@ -61,7 +61,7 @@ const About = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localisation</p>
-                    <p className="font-medium">Cergy, Île-de-France</p>
+                    <p className="font-medium">Île-de-France</p>
                   </div>
                 </div>
               </Card>
