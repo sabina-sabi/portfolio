@@ -6,11 +6,30 @@ import { Badge } from "@/components/ui/badge";
 const Certificates = () => {
   const certificates = [
     {
+      title: "Fondamentaux de l’analyse de données",
+      issuer: "Cisco Networking Academy",
+      date: "31 Décembre 2025",
+      description: "Formation aux concepts fondamentaux de la science des données et à l'analyse de données",
+      skills: ["Collection de données", "Validation de données", "Analyse de données"],
+      badge: true,
+      image: "/portfolio/certificates/data_analytics_essentials.png",
+      pdfUrl: "/portfolio/certificates/Data_Analytics_Essentials_certificate_fariza-faradji.pdf",
+      badgeUrl: "https://www.credly.com/badges/7a37dbc7-4fa8-4adf-a429-7f6585f0e3c8/public_url",
+    },
+
+    {
       title: "Introduction à la science des données",
       issuer: "Cisco Networking Academy",
       date: "26 Octobre 2025",
-      description: "Formation aux concepts fondamentaux de la science des données et à l'analyse de données",
-      skills: ["Collection de données", "Validation de données", "Analyse de données"],
+      description: "Bases de l’analyse et de la visualisation de données",
+      skills: [
+        "Tableaux de bord",
+        "Analyse de données",
+        "Data storytelling",
+        "Visualisation de données", "Excel",
+        "SQL",
+        "Tableau"
+      ],
       badge: true,
       image: "/portfolio/certificates/intro_data_science.png",
       pdfUrl: "/portfolio/certificates/Introduction_Data_Science.pdf",
