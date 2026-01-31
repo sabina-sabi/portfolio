@@ -7,6 +7,11 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/portfolio/", // Set the base path for GitHub Pages deployment
 
+  build: {
+    outDir: "docs",   // 👈 GitHub Pages can serve /docs
+    emptyOutDir: true // 👈 clean docs folder each build
+  },
+
   server: {
     host: "::",
     port: 8080,
