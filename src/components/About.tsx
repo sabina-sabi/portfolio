@@ -30,26 +30,23 @@ const About = () => {
             <h3 className="text-2xl font-bold">Bienvenue sur mon portfolio</h3>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Ingénieure junior spécialisée en réseaux et cybersécurité, je suis actuellement en fin
-              de Master 2 Réseaux & Sécurité à la Sorbonne Université, en partenariat avec le CFA Insta.
-              Je termine mon alternance en tant qu’assistante ROSI
-              (assistante ingénieure sécurité des systèmes d’information).
-            </p>
+  Ingénieure junior spécialisée en réseaux et cybersécurité, je suis en fin de
+  Master 2 Réseaux & Sécurité à la Sorbonne Université, en partenariat avec le CFA Insta.
+  Je termine actuellement mon alternance en tant qu’assistante ROSI
+  (assistante ingénieure sécurité des systèmes d’information).
+</p>
 
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Mon parcours académique débute par un baccalauréat scientifique à dominante mathématique,
-              suivi d’une Licence Informatique à Sorbonne Paris Nord.
-              J’ai ensuite poursuivi en Licence 3 Informatique, spécialité DANT
-              (Développement d’Applications et Nouvelles Technologies) à la Sorbonne Université,
-              en alternance, avec une expérience en tant que développeuse et conceptrice Java.
-            </p>
+<p className="text-muted-foreground text-lg leading-relaxed">
+  Mon parcours s’appuie sur une solide formation en informatique,
+  complétée par deux expériences en alternance : une première en développement et
+  conception Java, puis une seconde orientée réseaux et cybersécurité.
+</p>
 
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Cette double compétence en développement et en sécurité me permet aujourd’hui
-              d’aborder les problématiques de cybersécurité avec une vision globale,
-              orientée architecture, exploitation et protection des systèmes d’information.
-              Je recherche un CDI en réseaux et cybersécurité à partir de septembre 2026.
-            </p>
+<p className="text-muted-foreground text-lg leading-relaxed">
+  Ce double profil développement et sécurité me permet d’aborder les enjeux de
+  protection des systèmes d’information avec une vision globale.
+  Je recherche un CDI en réseaux et cybersécurité à partir de septembre 2026.
+</p>
 
             {/* Contact Info Cards */}
             <div className="grid gap-4 mt-8">
