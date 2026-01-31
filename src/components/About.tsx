@@ -1,45 +1,94 @@
+import { Mail, MapPin, Download } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
 const About = () => {
   return (
-    <section id="about" className="py-20">
-      <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl font-bold mb-8">À propos</h2>
+    <section id="about" className="py-20 bg-section-bg">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">À propos de moi</h2>
+          <div className="w-20 h-1 bg-primary mx-auto" />
+        </div>
 
-        <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-          Ingénieure junior spécialisée en réseaux et cybersécurité, je suis actuellement en fin
-          de Master 2 Réseaux & Sécurité à la Sorbonne Université, en partenariat avec le CFA Insta.
-          Mon parcours académique et professionnel s’est construit autour des systèmes,
-          des réseaux et de la sécurité des systèmes d’information.
-        </p>
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Profile Image */}
+          <div className="animate-slide-up">
+            <div className="relative">
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/portfolio/photo_portfolio.png" 
+                  alt="photo Sab Amzal" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
 
-        <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-          Après un baccalauréat scientifique à dominante mathématique obtenu avec mention,
-          j’ai réalisé mes deux premières années de licence en informatique à Sorbonne Paris Nord.
-          J’ai ensuite poursuivi en Licence 3 Informatique, spécialité DANT
-          (Développement d’Applications et Nouvelles Technologies), à la Sorbonne Université,
-          en partenariat avec le CFA des Sciences.
-        </p>
+          {/* About Content */}
+          <div className="animate-slide-up space-y-6">
+            <h3 className="text-2xl font-bold">Bienvenue sur mon portfolio</h3>
 
-        <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-          Cette formation m’a permis d’effectuer une alternance en tant que développeuse et
-          conceptrice Java, où j’ai acquis de solides bases en développement logiciel,
-          en conception applicative et en logique métier, compétences qui renforcent aujourd’hui
-          mon approche de la sécurité applicative et des systèmes.
-        </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Ingénieure junior spécialisée en réseaux et cybersécurité, je suis actuellement en fin
+              de Master 2 Réseaux & Sécurité à la Sorbonne Université, en partenariat avec le CFA Insta.
+              Je termine mon alternance en tant qu’assistante ROSI
+              (assistante ingénieure sécurité des systèmes d’information).
+            </p>
 
-        <p className="text-muted-foreground text-lg leading-relaxed mb-5">
-          J’ai ensuite intégré un Master 2 en Réseaux & Sécurité en alternance,
-          au cours duquel j’occupe le poste d’assistante ROSI
-          (assistante ingénieure sécurité des systèmes d’information).
-          Mes missions couvrent notamment la supervision de la sécurité du SI,
-          l’analyse des alertes, la gestion des incidents,
-          ainsi que la sécurisation des environnements réseaux et systèmes.
-        </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Mon parcours académique débute par un baccalauréat scientifique à dominante mathématique,
+              suivi d’une Licence Informatique à Sorbonne Paris Nord.
+              J’ai ensuite poursuivi en Licence 3 Informatique, spécialité DANT
+              (Développement d’Applications et Nouvelles Technologies) à la Sorbonne Université,
+              en alternance, avec une expérience en tant que développeuse et conceptrice Java.
+            </p>
 
-        <p className="text-muted-foreground text-lg leading-relaxed">
-          Mes enseignements étant terminés, je finalise actuellement mon alternance et prépare
-          ma soutenance afin d’obtenir mon diplôme. Je suis à la recherche d’un CDI en réseaux
-          et cybersécurité à partir de septembre 2026.
-        </p>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              Cette double compétence en développement et en sécurité me permet aujourd’hui
+              d’aborder les problématiques de cybersécurité avec une vision globale,
+              orientée architecture, exploitation et protection des systèmes d’information.
+              Je recherche un CDI en réseaux et cybersécurité à partir de septembre 2026.
+            </p>
+
+            {/* Contact Info Cards */}
+            <div className="grid gap-4 mt-8">
+              <Card className="p-4 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-accent rounded-lg">
+                    <Mail className="w-5 h-5 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className="font-medium">farizafaradji@gmail.com</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-4 hover:shadow-lg transition-shadow">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-accent rounded-lg">
+                    <MapPin className="w-5 h-5 text-accent-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Localisation</p>
+                    <p className="font-medium">Île-de-France</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            {/* CV Download Button */}
+            <div className="mt-8">
+              <Button size="lg" className="w-full" asChild>
+                <a href="/portfolio/CV_Sab_Amzal.pdf" download="CV_Sab_Amzal.pdf">
+                  <Download className="w-5 h-5 mr-2" />
+                  Télécharger mon CV
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
